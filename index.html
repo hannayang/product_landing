@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <title> Peking Opera Tickets Sale</title>
+  <header>
+    <div>
+      <img src="./assets/logo.png" alt="Logo borrowed from FreeCodeCampl.org">
+    </div>
+    <nav>
+      <a class="nav-link" href="#submit"> Introduction </a>
+      <a class="nav-link" href="#pastPerformance">Performance </a>
+      <a class="nav-link" href="#pricing"> Pricing </a>
+    </nav>
+  </header>
+  <section class="bander">
+    <h1> Top Peking Opera artists performing in Vancouver </h1>
+    <form action="https://www.freecodecamp.com/email-submit">
+      <input id="email" name="email" type="email" placeholder="Enter your email address" required>
+      <input id="submit" type="submit" value="Get Started" class="btn"></input>
+    </form>
+  </section>
+
+  <main>
+    <div class="upperContent">
+      <section>
+        <div class="grid">
+            <div class="icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <div class="desc">
+              <h2> Top performers </h2>
+              <p> Mr. YU Kuizhi and Ms. LI Shengsu are the most well-recognized Peking Opera artists in China. Partnering for 20+ years, Yu plays the role of elderly males, while Li plays the role of mature females. </p>
+            </div>
+        </div>
+      </section>
+      <section>
+        <div class="grid">
+          <div class="icon">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <div class="desc">
+            <h2> Leading band </h2>
+            <p> Mr. ZHAO Jianhua, being the chief representative of Yu and Li's band, is recogized as a national top-class Ching-hu performer. His style makes masculine and feminine spirit flow in harmony.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="grid">
+          <div class="icon">
+            <i class="fas fa-newspaper"></i>
+          </div>
+          <div class="desc">
+            <h2> Worldwide audience feedback </h2>
+            <p id="pastPerformance"> BBC and various social media rated their performance as "five-star" performance.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <div class="middleContent">
+      <iframe id="video" width="652" height="368" src="https://www.youtube.com/embed/BDXNcb0ZHO0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div id="pricing" class="empty"></div>
+    </div>
+    
+    <div class="lowerContent">
+      <div class="ticketType">
+        <p class="level">Single Ticket</p>
+        <h3> $100 </h3>
+        <ul>
+          <li>For 1 person only</li>
+          <li>Seating at Row 30-50</li>
+          <li>Two children below 5 yrs for free</li>
+          <li>Free intro booklet</li>
+        </ul>
+        <button class="btn"> Select </button>
+      </div>
+      <div class="ticketType">
+        <p class="level">Family Ticket</p>
+        <h3> $180 </h3>
+        <ul>
+          <li>For 2-3 people</li>
+          <li>Seating at Row 25-40</li>
+          <li>Two children below 5 yrs for free</li>
+          <li>Free intro booklet</li>
+        </ul>
+        <button class="btn"> Select </button>
+      </div>
+      <div class="ticketType">
+        <p class="level">Group Ticket</p>  
+        <h3> $500 </h3>
+        <ul>
+          <li>For 6-9 people</li>
+          <li>Seating at Row 10-30</li>
+          <li>Four children below 5 yrs for free</li>
+          <li>Free intro booklet</li>
+        </ul>
+        <button class="btn"> Select </button>
+      </div>
+    </div>
+  </main>  
+  <footer>
+    <ul> 
+      <li><a href="#submit">Privacy </a></li>
+      <li><a href="#pastPerformance">Terms</a></li>
+      <li><a href="mailto:someone@example.com?Subject=Hi%20there" target="_top">Contact</a></li>
+    </ul>
+    <p class="copyright">Copyright 2019, Hanna Yang, freeCodeCamp Project 3</p> 
+  </footer>
+</body>
+</html>

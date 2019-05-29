@@ -1,0 +1,240 @@
+/*-------- global styling------- **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  background-color: #F9EAEA;
+  font-family: 'Lato', sans-serif;
+}
+li {
+  list-style: none; 
+}
+a {
+    color: black; 
+    text-decoration: none; 
+}
+.btn {
+  padding: 0 10px;
+  height: 2rem;
+  width: 9rem;
+  margin: 10px auto;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: #FF6347;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+/*--------header and navigation bar---------*/ 
+header {
+    position: fixed; 
+    width: 100%;
+    display: flex; 
+    justify-content: space-between; 
+    background-color: #F9EAEA;
+    padding-bottom: 0.8em; 
+    z-index: 9;
+}
+header img {
+    width: 30vw;
+    min-width: 120px;
+    margin-top: 1.2rem;
+}
+nav {
+  width: 50vw;
+}
+nav a {
+  display: inline-block;
+  margin: 20px 0 0 20px;
+  font-size: 1rem; 
+}
+/*--------bander and email section-------*/ 
+.bander {
+  position: relative;
+  background: lightgray;
+  overflow: hidden;
+}
+.bander:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.4;
+  background-image: url(./assets/background_img.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1 { 
+    color: black;
+    padding-top: 7em;  
+    padding-bottom: 0.8rem;
+    text-align: center;
+}
+form {
+    display: flex; 
+    flex-direction: column; 
+    padding: 0.8em; 
+    margin-bottom: 25px;
+}
+[type="email"] {
+    width: 250px; 
+    margin: 0 auto; 
+    height: 1.5rem; 
+    font-size: 0.9rem; 
+    padding-left: 5px; 
+    z-index: 2;
+}
+[type="submit"] {
+  z-index: 2;
+}
+/*-------uppderContent section------*/ 
+.upperContent {
+    max-width: 70vw; 
+    margin: 25px auto; 
+}
+.grid {
+  margin: 2rem 0;
+}
+.icon {
+    width: 5vw; 
+    font-size: 2rem; 
+    color: #f41142;  
+    
+}
+.desc {
+    width: 75vw;
+    display: flex; 
+    flex-direction: column; 
+}
+h2 {
+    font-size: 1.4rem;
+    color: #2E2B2B;
+}
+h2~p {
+    padding-top: 0.5rem;  
+}
+/** middleContent section **/ 
+.middleContent {
+  width: 50vw;
+  min-width: 310px;
+  margin: 0 auto;
+  padding: 1.8rem 0 2rem 0;
+}
+#video {
+  width: 100%;
+}
+.empty {
+  padding-bottom: 1.5rem;
+}
+/** lowerContent section **/ 
+.ticketType { 
+  text-align: center; 
+  width: 300px; 
+  height: 340px; 
+  margin: 10px auto;   
+  border: 1px solid black; 
+  border-radius: 5px; 
+}
+.level {
+  font-size: 20px; 
+  font-weight: bold; 
+  padding: 15px;  
+  width: 298px; 
+  border-top-left-radius: 5px; 
+  border-top-right-radius: 5px; 
+  background-color: #dfbfbf; 
+  text-transform: uppercase; 
+}
+h3 {
+    font-size: 28px;  
+    padding: 20px;  
+}
+h3+ul {
+    line-height: 1.9em; 
+    padding-bottom: 1.2em; 
+}
+/*-----------footer-------------*/ 
+footer {
+    text-align: right; 
+    background-color: #eed8d8;
+    width: 80vw; 
+    margin: 0 auto; 
+}
+footer ul {
+    display: flex;
+    flex-direction: row; 
+    width: 25vw; 
+    justify-content: space-between; 
+    margin-left: 68.5%;
+    padding: 20px 15px 8px 0;
+}
+.copyright {
+    padding: 0 15px 15px 0;
+    color: #7c7c7c; 
+    font-size: 14px; 
+}
+/*-----------@media-------------*/ 
+@media (min-width:740px){
+  .grid {
+    display: flex;
+    margin: 3rem 0;
+  }
+  .icon {
+    width: 30vw; 
+    font-size: 2.8rem; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;  
+}
+}
+
+@media (min-width:960px){
+  nav a {
+    font-size: 1.1rem; 
+    margin: 30px 7px 0 65px;
+  }
+  [type="email"] {
+    width: 400px;
+  }
+  .lowerContent {
+    display: flex; 
+    justify-content: center; 
+    padding: 40px 30px; 
+  }
+  .ticketType { 
+    margin: 10px;  
+  }
+}
+
+@media (max-width:741px){
+  nav a {
+    display: block;
+    font-size: 0.9rem;
+    width: 40vw;
+    margin: 10px 0 5px 60px;
+  }
+  footer {
+    width: 100%;
+    text-align: center;
+  }
+  footer ul {
+    width: 60vw; 
+    margin: 0 auto;
+  }
+}
+
