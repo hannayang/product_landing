@@ -1,3 +1,9 @@
+/*-------------colors------
+background #FFF9F6
+highlight #FC7451
+black #43413E
+-----------------*/
+
 /*-------- global styling------- **/
 * {
     margin: 0;
@@ -5,30 +11,37 @@
     box-sizing: border-box;
 }
 body {
-  background-color: #F9EAEA;
+  background-color: #FFF9F6;
   font-family: 'Lato', sans-serif;
 }
 li {
   list-style: none; 
 }
 a {
-    color: black; 
+    color: #43413E; 
     text-decoration: none; 
 }
 .btn {
   padding: 0 10px;
-  height: 2rem;
+  height: 3rem;
   width: 9rem;
-  margin: 10px auto;
-  font-size: 1rem;
+  margin: 15px auto 10px;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 5px;
-  background-color: #FF6347;
+  background-color: #FC7451;
   cursor: pointer;
+  border: none; 
+  color: white; 
+  transform: translateY(0);
+  transition: all 0.4s cubic-bezier(.06,.67,.37,.99);
 }
 .btn:hover {
-  transform: scale(1.05);
+  transform: translateY(-.2rem);
+}
+.get-started.btn {
+  margin-top: 35px;
 }
 /*--------header and navigation bar---------*/ 
 header {
@@ -36,7 +49,7 @@ header {
     width: 100%;
     display: flex; 
     justify-content: space-between; 
-    background-color: #F9EAEA;
+    background-color: #FFF9F6;
     padding-bottom: 0.8em; 
     z-index: 9;
 }
@@ -93,10 +106,10 @@ form {
 }
 [type="email"] {
     width: 250px; 
-    margin: 0 auto; 
-    height: 1.5rem; 
+    margin: 30px auto 10px; 
+    height: 2.5rem; 
     font-size: 0.9rem; 
-    padding-left: 5px; 
+    padding: 5px; 
     z-index: 2;
 }
 [type="submit"] {
@@ -113,7 +126,7 @@ form {
 .icon {
     width: 5vw; 
     font-size: 2rem; 
-    color: #f41142;  
+    color: #FC7451;  
     
 }
 .desc {
@@ -127,6 +140,7 @@ h2 {
 }
 h2~p {
     padding-top: 0.5rem;  
+    color: #999;
 }
 /** middleContent section **/ 
 .middleContent {
@@ -146,18 +160,15 @@ h2~p {
   text-align: center; 
   width: 300px; 
   height: 340px; 
-  margin: 10px auto;   
-  border: 1px solid black; 
-  border-radius: 5px; 
+  margin: 10px auto;  
 }
 .level {
   font-size: 20px; 
   font-weight: bold; 
+  margin-top: 30px;
   padding: 15px;  
   width: 298px; 
-  border-top-left-radius: 5px; 
-  border-top-right-radius: 5px; 
-  background-color: #dfbfbf; 
+  color: #43413E;
   text-transform: uppercase; 
 }
 h3 {
@@ -171,9 +182,8 @@ h3+ul {
 /*-----------footer-------------*/ 
 footer {
     text-align: right; 
-    background-color: #eed8d8;
     width: 80vw; 
-    margin: 0 auto; 
+    margin: 0 auto 100px; 
 }
 footer ul {
     display: flex;
@@ -181,7 +191,8 @@ footer ul {
     width: 25vw; 
     justify-content: space-between; 
     margin-left: 68.5%;
-    padding: 20px 15px 8px 0;
+    padding: 20px 15px 8px 0px;
+    margin-bottom: 20px;
 }
 .copyright {
     padding: 0 15px 15px 0;
