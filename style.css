@@ -262,7 +262,13 @@ footer ul {
   nav {
     width: 40%; 
   }
+  footer {
+    text-align: center; 
+  }
+  footer ul {
+    margin: 30px auto; 
+  }
   .copyright {
-    margin-right: 10%; 
+    margin: 30px auto 0 auto; 
   }
 }
